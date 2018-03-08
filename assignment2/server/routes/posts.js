@@ -3,9 +3,10 @@ module.exports = {
         res.status(200).send(req.store.posts)
     },
     addPost(req, res) {
+        console.log(req.body)
         let newPost = req.body
         let postId = req.store.posts.length
-        store.posts.push(newPost)
+        req.store.posts.push(newPost)
         res.status(201).send({postId: postId})
     },
     updatePost(req, res) {

@@ -1,5 +1,6 @@
 //1. define functions:
 const getPosts = () => {
+    container.innerHTML = ''
     fetch('http://localhost:3000/posts/').then(response =>{
         return response.json();
       })
@@ -17,15 +18,4 @@ const getPosts = () => {
           })
     })
 }
-
-const attachEventHandlers = () => {
-    document.querySelectorAll('.close, button').forEach(elem => {
-        elem.onclick = () => {
-            document.querySelector('.modal').classList.toggle('show')
-        }
-    })
-}
-
-//2. call functions:
-attachEventHandlers()
 getPosts()

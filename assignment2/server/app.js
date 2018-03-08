@@ -28,8 +28,9 @@ app.use(logger('dev'))
 app.use(errorhandler())
 app.use(cors())
 app.use((req, res, next) => {
-  req.store = store
-  next()
+    console.log(req.body)
+    req.store = store
+    next()
 })
 
 app.get('/posts', routes.posts.getPosts)
