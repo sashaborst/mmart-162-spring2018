@@ -5,10 +5,13 @@ html, body {
     padding: 0px;
     height: 100%;
 }
-html, div, body, h2, h3, p {
+html, div, body, h2, h3, p, button, input, textarea {
     font-family: "Open Sans",Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: #3d3d3d;
+}
+h2, h3 {
+    font-weight: 400;
 }
 h1 {
     font-family: "Amatic SC";
@@ -25,4 +28,15 @@ li, p {
     padding: 20px;
     min-height: 100vh;
     box-sizing: border-box;
+}
+.comments {
+    background: #F0F0F0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px #EEE;
+    border-radius: 4px;
+    min-height: 200px;
+}
+.right {
+    float: right;
 }

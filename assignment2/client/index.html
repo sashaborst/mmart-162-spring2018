@@ -3,13 +3,49 @@
     <head>
         <meta charset="utf-8">
         <title>Client</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/form.css">
     </head>
     <body>
         <div id="main">
-            <h1>Blog</h1>
+            <h1>Blog <button class="show button-action right">Add New Post</button></h1>
+            <!-- 1. Container gets populated via API -->
             <div id="container"></div>
         </div>
+
+
+        <!-- 2. Hidden Modal (for adding / editing blog posts) -->
+        <div class="modal">
+            <div class="content">
+                <header>
+                    <span class="close">×</span>
+                    <h1>Add Post</h1>
+                </header>
+                <div class="body">
+                    <!-- Blog Form -->
+                    <form class="form-inline">
+                        <div class="row">
+                            <label>Blog Title:</label>
+                            <input type="text" placeholder="Blog title">
+                        </div>
+                        <div class="row">
+                            <label>URL:</label>
+                            <input type="text" placeholder="Link to more information">
+                        </div>
+                        <div class="row">
+                            <label>Blog Content:</label>
+                            <textarea placeholder="Blog content"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <footer>
+                    <button class="button button-secondary">Cancel</button>
+                    <button class="button button-primary">Save</button>
+                </footer>
+            </div>
+        </div>
+        <!-- Link to main JavaScript (client-side) -->
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
