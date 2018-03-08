@@ -1,5 +1,8 @@
 module.exports = {
     getPosts(req, res) {
+        console.log('\n\n-------- YOUR DATA STORE --------')
+        console.log(req.store)
+        console.log('\n\n\n\n')
         res.status(200).send(req.store.posts)
     },
     addPost(req, res) {

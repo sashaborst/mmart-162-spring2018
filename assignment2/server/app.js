@@ -23,12 +23,13 @@ let store = {
 
 let app = express()
 
+// Middleware: Does stuff to the request and response objects
+// before routing:
 app.use(bodyParser.json())
 app.use(logger('dev'))
 app.use(errorhandler())
 app.use(cors())
 app.use((req, res, next) => {
-    console.log(req.body)
     req.store = store
     next()
 })

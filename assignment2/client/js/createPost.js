@@ -13,15 +13,10 @@ const createPost = () => {
     }).then(function(response) {
         return response.json();
     }).then(function(data) {
-        //clear form:
         document.querySelector('#name').value = ''
         document.querySelector('#url').value = ''
         document.querySelector('#text').value = ''
-
-        // close form:
         document.querySelector('.modal').classList.toggle('show')
-        // re-query for posts
-        // note that getPosts is located in the getPosts.js file):
         getPosts()
     })
 }
