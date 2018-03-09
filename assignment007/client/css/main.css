@@ -30,11 +30,16 @@ li, p {
     box-sizing: border-box;
 }
 .comments {
-    background: #F0F0F0;
-    padding: 20px;
+    background: #F9F9F9;
+    padding: 5px;
     box-sizing: border-box;
     border: solid 1px #EEE;
     border-radius: 4px;
+}
+.comments h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.1em;
 }
 .right {
     float: right;

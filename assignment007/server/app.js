@@ -9,7 +9,7 @@ let store = {
     posts: [{
         name: 'What is going on right now in this EdX course?',
         url: 'https://courses.edx.org/courses/course-v1:Microsoft+DEV283x+2T2017/course/',
-        text: 'You are learning to use developer documentation and resources.',
+        text: 'As we have already discussed, this course is a little advanced and some of the language and concepts are glossed over because the teacher already assumes basic fluency with server-side programming. That is OK. You will still learn a ton, even if you don\'t understand everything. You are learning to use developer documentation and resources, and we will go over the jargon and concepts in class.',
         comments: [{
                 text: 'So many assumptions are being made about what we already know?! This is overwhelming!'
             }, {
