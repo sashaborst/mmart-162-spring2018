@@ -19,6 +19,7 @@ h1 {
 }
 li, p {
     line-height: 1.5em;
+    font-size: 0.9em;
 }
 #main {
     width: 70vw;

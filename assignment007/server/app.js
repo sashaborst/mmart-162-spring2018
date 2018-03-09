@@ -35,6 +35,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/posts', routes.posts.getPosts)
+app.get('/posts/:postId', routes.posts.getPost)
 app.post('/posts', routes.posts.addPost)
 app.put('/posts/:postId', routes.posts.updatePost)
 app.delete('/posts/:postId', routes.posts.removePost)
